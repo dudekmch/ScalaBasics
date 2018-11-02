@@ -9,7 +9,7 @@ class IntroToFPSpec extends UnitSpec{
         base + toAdd
       }
 
-      val addTwo: Int => Int = ???
+      val addTwo: Int => Int = methodWithTwoArguments(2)
 
       addTwo(2) mustBe 4
     }
@@ -19,7 +19,7 @@ class IntroToFPSpec extends UnitSpec{
         number1 + number2
       }
 
-      val addThree: Int => Int = ???
+      val addThree: Int => Int = addNumbers(3, _)
 
       addThree(2) mustBe 5
 
